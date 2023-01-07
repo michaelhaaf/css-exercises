@@ -4,10 +4,10 @@
 }
 
 .container {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 4px;
-  text-align: center;
 }
 
 .container div {
@@ -23,6 +23,17 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: #393f4d;
+  align-content: center;
+  justify-content: center;
+}
+
+.logo {
+  justify-self: start;
+  align-self: center;
+}
+
+.menu {
+  align-self: center;
 }
 
 .menu ul {
@@ -33,6 +44,7 @@
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
 }
 
 .sidebar {
@@ -43,6 +55,8 @@
 }
 
 .sidebar .photo {
+  display: grid;
+  align-items: center;
   background-color: white;
   color: black;
   font-size: 12px;
@@ -52,6 +66,7 @@
 
 .sidebar .side-content {
   display: grid;
+  align-items: center;
   background-color: white;
   color: black;
   font-size: 16px;
@@ -70,6 +85,7 @@
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .article {
